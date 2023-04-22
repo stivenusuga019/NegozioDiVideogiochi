@@ -1,0 +1,19 @@
+.sombra{
+    filter: grayscale(100%);
+}
+
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+.texto{
+    text-decoration: none;
+}
+
+.espacio{
+    margin-top: 40px;
+    
+}

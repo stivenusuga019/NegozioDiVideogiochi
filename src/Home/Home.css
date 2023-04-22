@@ -1,0 +1,24 @@
+.banner{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi-c4dbe.appspot.com/o/1052293.jpg?alt=media&token=a49439d6-35ce-4f3b-9b64-3f2dc242c7b1");
+    background-position: top center;
+    background-size: cover;
+    padding:  22%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-attachment: fixed;
+}
+
+.banner::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+

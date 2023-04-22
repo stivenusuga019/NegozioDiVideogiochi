@@ -1,0 +1,117 @@
+.card-background{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/Audifonos.webp?alt=media&token=08ed95f4-60a2-4517-8394-9ba4421a80ef);
+}
+.card-background2{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/microfono.webp?alt=media&token=d40b90f8-d3a9-4f46-87d0-48602e4350b8);
+}
+.card-background3{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/monitor.webp?alt=media&token=83d1b980-55a1-470e-841e-10c7eb1da020);
+}
+.card-background4{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/fuentepoder.webp?alt=media&token=1ed1dfc5-7056-40a3-ba3f-ca334b181b1d);
+}
+.card-background5{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/silla.webp?alt=media&token=ee4aee33-683b-4f31-9c01-2bd922e5af64);
+}
+.card-background6{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/mouse.webp?alt=media&token=0286ebdc-c391-4cae-87fc-17e4f80cefcf);
+}
+.card-background7{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/teclado.webp?alt=media&token=b2bf83c1-b66e-4b23-98e7-83c783a945be);
+}
+.card-background8{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/ram.webp?alt=media&token=30b2e355-e305-4ef0-b78b-40e8ff1782b4);
+}
+.card-background9{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/chasis.webp?alt=media&token=088adac6-730e-4d6f-b0d1-4a8e22a58bb8);
+}
+.card-background10{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/negoziodivideogiochi.appspot.com/o/camara.webp?alt=media&token=2a19670f-42cc-43c1-9d2c-8cab4289402e);
+}
+
+.hero-section {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1e23;
+}
+
+.card-container {
+    display: flex;
+    gap: 65px;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+
+}
+
+.card2 {
+    position: relative;
+    list-style: none;
+    gap: 30px;
+    width: 220px;
+    transition: .3s ease;
+    background-color: #1a1e23;
+    border-radius: 20px;
+}
+
+.card2:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+
+.card2:hover .card-background {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+}
+
+.card-container:hover .card2:not(:hover) {
+    transform: scale(.9);
+}
+
+.card-container:hover>.card2:not(:hover) .card-background,
+.card-container:hover>.card2:not(:hover) .card-category {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+
+.content2 {
+    top: 50%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+}
+
+.card-category {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card-heading {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
